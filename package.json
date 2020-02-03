@@ -1,0 +1,15 @@
+{
+  "name": "amp-validator-binary",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "pkg -t node12-linux,node12-linux,node12-win -o dist/validator ./index.js",
+    "build:win": "pkg -t node12-win  -o dist/validator ./index.js"
+  },
+  "dependencies": {
+    "amphtml-validator": "^1.0.29"
+  },
+  "devDependencies": {
+    "pkg": "^4.4.2"
+  }
+}
